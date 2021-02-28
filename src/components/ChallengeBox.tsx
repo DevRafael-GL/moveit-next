@@ -23,6 +23,8 @@ export function ChallengeBox() {
   return (
     <div className={styles.challengeBoxContainer}>
       {activeChallenge ? (
+        
+        <div className={styles.overlay}>
         <div className={styles.challengeActive}>
           <header>Ganhe {activeChallenge.amount} xp</header>
 
@@ -44,6 +46,7 @@ export function ChallengeBox() {
               Completei
             </button>
           </footer>
+        </div>
         </div>
       ) : (
         <div className={styles.challengeNotActive}>
