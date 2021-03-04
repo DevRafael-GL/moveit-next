@@ -1,7 +1,7 @@
 .experienceBar {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .experienceBar span {
@@ -48,5 +48,11 @@ span.currentExperience {
 
   .experienceBar span {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-height: 900px) {
+  .experienceBar {
+    margin-bottom: 1rem;
   }
 }
