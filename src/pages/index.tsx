@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { GetServerSideProps } from "next";
 
+import { NameModal } from "../components/NameModal"
+
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
 import { ExperienceBar } from "../components/ExperienceBar";
@@ -24,6 +26,7 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
+      < NameModal />
       <div className={styles.container}>
         <Head>
           <title>Início | move.it</title>

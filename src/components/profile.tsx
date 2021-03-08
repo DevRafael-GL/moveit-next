@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ChallengesContext } from "../contexts/ChallengesContext";
 import styles from "../styles/components/Profile.module.css";
+import { NameModal } from "../components/NameModal"
 
 export function Profile() {
   const { level } = useContext(ChallengesContext)
@@ -9,7 +10,7 @@ export function Profile() {
     <div className={styles.profileContainer}>
       <img src="https://github.com/DevRafael-GL.png" alt="Rafael Gonçalves" />
       <div>
-        <strong>Rafael Gonçalves</strong>
+        <strong>{NameModal.name.valueOf}</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
           Level {level}
